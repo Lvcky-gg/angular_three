@@ -14,9 +14,13 @@ import {
   encapsulation: ViewEncapsulation.None,
   host: {
     class: 'control',
+    // '(click)': 'onClick()',
   },
 })
 export class ControlComponent {
   // @HostBinding('class') className = 'control';
   @Input({ required: true }) label!: string;
+  // onClick() {
+  //   console.log('ControlComponent.onClick()');
+  // }
 }
