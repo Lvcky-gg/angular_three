@@ -16,7 +16,7 @@ export class ServerStatusComponent {
 
       if (rnd < 0.5) {
         this.currentStatus = 'online';
-      } else if (rnd < 0.2) {
+      } else if (rnd < 0.9) {
         this.currentStatus = 'offline';
       } else {
         this.currentStatus = 'unknown';
